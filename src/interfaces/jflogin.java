@@ -52,7 +52,7 @@ public class jflogin extends javax.swing.JFrame {
 
         btnsair.setText("SAIR");
         jPanel1.add(btnsair);
-        btnsair.setBounds(420, 90, 100, 23);
+        btnsair.setBounds(420, 100, 100, 30);
 
         btnentrar.setText("ENTRAR");
         btnentrar.addActionListener(new java.awt.event.ActionListener() {
@@ -61,7 +61,7 @@ public class jflogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnentrar);
-        btnentrar.setBounds(320, 90, 100, 23);
+        btnentrar.setBounds(320, 100, 100, 30);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,36 +69,37 @@ public class jflogin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(320, 60, 200, 20);
+        jTextField1.setBounds(320, 60, 200, 30);
 
         jlogo.setBackground(new java.awt.Color(0, 0, 0));
         jlogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo.png"))); // NOI18N
         jlogo.setText("logo");
         jlogo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jlogo);
-        jlogo.setBounds(0, 0, 260, 230);
+        jlogo.setBounds(0, 0, 260, 140);
 
         jLabel2.setText("SENHA");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(270, 60, 50, 20);
+        jLabel2.setBounds(270, 60, 50, 30);
 
         jLabel4.setText("CLIQUE AQUI");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(460, 150, 80, 20);
+        jLabel4.setBounds(450, 160, 90, 20);
 
         jLabel3.setText("ESQUECEU A SENHA?");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(320, 150, 200, 20);
+        jLabel3.setBounds(320, 160, 200, 20);
 
         jButton3.setText("NOVO LOGIN");
         jPanel1.add(jButton3);
-        jButton3.setBounds(320, 120, 200, 23);
+        jButton3.setBounds(320, 130, 200, 30);
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(320, 30, 200, 20);
+        jTextField2.setBounds(320, 20, 200, 30);
 
         jLabel1.setText("LOGIN");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(270, 30, 50, 20);
+        jLabel1.setBounds(270, 20, 50, 30);
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 230));
 
