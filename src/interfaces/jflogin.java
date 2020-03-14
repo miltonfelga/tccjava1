@@ -36,7 +36,6 @@ public class jflogin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnsair = new javax.swing.JButton();
         btnentrar = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         jlogo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -44,6 +43,7 @@ public class jflogin extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -62,14 +62,6 @@ public class jflogin extends javax.swing.JFrame {
         });
         jPanel1.add(btnentrar);
         btnentrar.setBounds(320, 100, 100, 30);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(320, 60, 200, 30);
 
         jlogo.setBackground(new java.awt.Color(0, 0, 0));
         jlogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -91,7 +83,7 @@ public class jflogin extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(320, 160, 200, 20);
 
-        jButton3.setText("NOVO LOGIN");
+        jButton3.setText("NOVO CADASTRO");
         jPanel1.add(jButton3);
         jButton3.setBounds(320, 130, 200, 30);
         jPanel1.add(jTextField2);
@@ -100,16 +92,14 @@ public class jflogin extends javax.swing.JFrame {
         jLabel1.setText("LOGIN");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(270, 20, 50, 30);
+        jPanel1.add(jPasswordField1);
+        jPasswordField1.setBounds(320, 60, 200, 30);
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 230));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-     
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void btnentrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnentrarActionPerformed
     Principal tela = new Principal();
@@ -161,7 +151,7 @@ public class jflogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel jlogo;
     // End of variables declaration//GEN-END:variables

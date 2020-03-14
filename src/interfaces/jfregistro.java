@@ -104,7 +104,7 @@ public class jfregistro extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(0, 51, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("foto");
-        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         jPanel1.add(jLabel2);
         jLabel2.setBounds(30, 60, 120, 130);
 
@@ -122,6 +122,7 @@ public class jfregistro extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

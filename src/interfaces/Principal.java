@@ -29,6 +29,12 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuItem1 = new javax.swing.JMenuItem();
         jdprincipal = new javax.swing.JDesktopPane();
+        jPanel1 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -40,15 +46,44 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        jPanel1.setLayout(null);
+
+        jButton5.setText("jButton1");
+        jPanel1.add(jButton5);
+        jButton5.setBounds(0, 0, 50, 50);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPanel2.setLayout(null);
+
+        jButton3.setText("jButton1");
+        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel2.add(jButton3);
+        jButton3.setBounds(50, 0, 50, 50);
+
+        jButton7.setText("jButton1");
+        jButton7.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel2.add(jButton7);
+        jButton7.setBounds(100, 0, 50, 50);
+
+        jButton1.setText("jButton1");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel2.add(jButton1);
+        jButton1.setBounds(150, 0, 50, 50);
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 820, 50);
+
+        jdprincipal.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout jdprincipalLayout = new javax.swing.GroupLayout(jdprincipal);
         jdprincipal.setLayout(jdprincipalLayout);
         jdprincipalLayout.setHorizontalGroup(
             jdprincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 820, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jdprincipalLayout.setVerticalGroup(
             jdprincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 580, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         getContentPane().add(jdprincipal);
@@ -74,7 +109,8 @@ public class Principal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setBounds(0, 0, 835, 640);
+        setSize(new java.awt.Dimension(835, 640));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -120,12 +156,18 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JDesktopPane jdprincipal;
     // End of variables declaration//GEN-END:variables
 }
